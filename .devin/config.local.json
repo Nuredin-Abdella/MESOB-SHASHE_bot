@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Exec(npm start)",
+      "Exec(node)",
+      "Exec(rm)",
+      "Exec(npm install)",
+      "Exec(curl)"
+    ]
+  }
+}
