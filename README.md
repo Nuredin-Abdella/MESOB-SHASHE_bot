@@ -5,12 +5,14 @@ A production-ready multilingual Telegram bot for MESOB (Ministry of Electronic S
 ## 🌟 Features
 
 ### 🌍 Multilingual Support
+
 - **English** - Full interface support
 - **አማርኛ (Amharic)** - Complete localization
 - **Afaan Oromo** - Native language support
 - Dynamic language switching with instant UI updates
 
 ### 🏛️ Government Services
+
 - **National ID** - Application information and requirements
 - **Passport Services** - Documentation and processing details
 - **Business Registration** - Company setup and licensing
@@ -19,6 +21,7 @@ A production-ready multilingual Telegram bot for MESOB (Ministry of Electronic S
 - **Application Tracking** - Real-time status updates
 
 ### 🤖 Smart Features
+
 - Intelligent message routing
 - User session management
 - Automatic language detection for greetings
@@ -28,6 +31,7 @@ A production-ready multilingual Telegram bot for MESOB (Ministry of Electronic S
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - Node.js (v14 or higher)
 - npm or yarn
 - Telegram Bot Token (from [@BotFather](https://t.me/botfather))
@@ -35,17 +39,20 @@ A production-ready multilingual Telegram bot for MESOB (Ministry of Electronic S
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone <repository-url>
    cd mesob-telegram-bot
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Configure environment**
+
    ```bash
    cp .env.example .env
    # Edit .env and add your bot token
@@ -53,11 +60,13 @@ A production-ready multilingual Telegram bot for MESOB (Ministry of Electronic S
    ```
 
 4. **Start the bot**
+
    ```bash
    npm start
    ```
 
    For development with auto-reload:
+
    ```bash
    npm run dev
    ```
@@ -83,13 +92,13 @@ mesob-telegram-bot/
 
 ## 📋 Bot Commands
 
-| Command | Description |
-|---------|-------------|
-| `/start` | Initialize bot and language selection |
-| `/help` | Show help information and features |
-| `/language` | Change interface language |
-| `/menu` | Return to main menu |
-| `/stats` | Bot statistics (admin only) |
+| Command     | Description                           |
+| ----------- | ------------------------------------- |
+| `/start`    | Initialize bot and language selection |
+| `/help`     | Show help information and features    |
+| `/language` | Change interface language             |
+| `/menu`     | Return to main menu                   |
+| `/stats`    | Bot statistics (admin only)           |
 
 ## 🎯 Usage Flow
 
@@ -119,14 +128,15 @@ ADMIN_CHAT_ID=your_chat_id_for_admin_features
 To add support for additional languages:
 
 1. **Update translations in `src/config/languages.js`**:
+
    ```javascript
    const translations = {
      welcome: {
        en: "Welcome!",
        am: "እንኳን በደህና መጡ!",
        om: "Baga nagaan dhuftan!",
-       ti: "እንቋዕ በደሐን መፃእካ!" // Add Tigrinya
-     }
+       ti: "እንቋዕ በደሐን መፃእካ!", // Add Tigrinya
+     },
      // ... add to all translation keys
    };
    ```
@@ -138,18 +148,21 @@ To add support for additional languages:
 ## 🔧 Development
 
 ### Code Style
+
 - Clean, modular architecture
 - Comprehensive error handling
 - Detailed logging for debugging
 - Scalable user state management
 
 ### Key Principles
+
 - **No hardcoded text** - All strings use translation system
 - **Dynamic keyboards** - All UI elements adapt to selected language
 - **Graceful fallbacks** - English used when translations missing
 - **Memory efficient** - Automatic cleanup of inactive user sessions
 
 ### Testing
+
 ```bash
 # Start bot in development mode
 npm run dev
@@ -172,6 +185,7 @@ Access stats with `/stats` command (admin only).
 ## 🚀 Deployment
 
 ### Local Deployment
+
 ```bash
 npm start
 ```
@@ -179,12 +193,14 @@ npm start
 ### Production Deployment
 
 1. **Environment Setup**:
+
    ```bash
    NODE_ENV=production
    BOT_TOKEN=your_production_token
    ```
 
 2. **Process Management** (using PM2):
+
    ```bash
    npm install -g pm2
    pm2 start bot.js --name "mesob-bot"
@@ -205,6 +221,7 @@ npm start
 ## 🔮 Future Enhancements
 
 ### Planned Features
+
 - [ ] **Database Integration** (MongoDB/Firebase)
 - [ ] **Real API Integration** with MESOB backend
 - [ ] **Document Upload** support
@@ -215,6 +232,7 @@ npm start
 - [ ] **Push Notifications** for application updates
 
 ### Scalability Improvements
+
 - [ ] Redis for session management
 - [ ] Webhook mode for better performance
 - [ ] Load balancing for multiple bot instances
@@ -230,6 +248,7 @@ npm start
 5. Open Pull Request
 
 ### Guidelines
+
 - Follow existing code style
 - Add translations for new features
 - Test with all supported languages
@@ -253,9 +272,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Contributors and testers
 
 ---
-
-**Built with ❤️ for Ethiopian citizens**
-
-*ለኢትዮጵያውያን ዜጎች በፍቅር የተገነባ*
-
-*Uummata Itoophiyaatiif jaalala guddaan ijaarame*
